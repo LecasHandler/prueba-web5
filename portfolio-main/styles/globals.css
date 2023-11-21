@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+body {
+  font-family: Montserrat, arial;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Jakarta;
+  src: url(../public/webfonts/PlusJakartaSans-Medium.woff2) format('woff2'),
+    url(../public/webfonts/PlusJakartaSans-Medium.woff) format('woff');
+}
+
+/* background github card*/
+.squares {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: repeat(11, 15px);
+}
+
+.squares {
+  grid-auto-flow: column;
+  grid-auto-columns: 15px;
+}
+
+.squares li {
+  background-color: #ebedf0;
+  border-radius: 4px;
+}
+
+.squares li[data-level="1"] {
+  background-color: #93E7A2;
+}
+
+.squares li[data-level="2"] {
+  background-color: #3EBE5E;
+}
+
+.squares li[data-level="3"] {
+  background-color: #2F984A;
+}
+
+.squares li[data-level="4"] {
+  background-color: #216435;
+}
